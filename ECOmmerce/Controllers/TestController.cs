@@ -12,5 +12,10 @@ namespace ECOmmerce.Controllers
         {
             return View();
         }
+
+        public IActionResult Sghj()
+        {
+            return View();
+        }
     }
 }
