@@ -12,5 +12,9 @@ namespace ECOmmerce.Controllers
         {
             return View();
         }
+        public IActionResult InSauew()
+        {
+            return View();
+        }
     }
 }
