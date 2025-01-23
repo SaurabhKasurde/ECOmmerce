@@ -8,7 +8,7 @@ namespace ECOmmerce.Controllers
         {
             return View();
         }
-        public IActionResult Indexqw()
+        public IActionResult Indew()
         {
             return View();
         }
