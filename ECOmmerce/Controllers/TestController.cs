@@ -8,7 +8,7 @@ namespace ECOmmerce.Controllers
         {
             return View();
         }
-        public IActionResult Indew()
+        public IActionResult InSaurabhdew()
         {
             return View();
         }
