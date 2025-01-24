@@ -1,3 +1,6 @@
+using ConcreteClass.AdminLoginConcrete;
+using IinterfaceClasses.Login_Interface;
+
 namespace ECOmmerce
 {
     public class Program
@@ -8,6 +11,9 @@ namespace ECOmmerce
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            //Add services for interface and its implementation
+            builder.Services.AddScoped<IadminLogin, AdminLoginConcrete>();
 
             var app = builder.Build();
 
@@ -20,11 +26,11 @@ namespace ECOmmerce
 
             app.UseAuthorization();
 
-            app.MapStaticAssets();
+            //app.MapStaticAssets();
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}")
-                .WithStaticAssets();
+                pattern: "{controller=Home}/{action=Index}/{id?}");
+            //    .WithStaticAssets();
 
             app.Run();
         }

@@ -7,8 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ConcreteClass\ConcreteClass.csproj" />
-    <ProjectReference Include="..\IinterfaceClasses\IinterfaceClasses.csproj" />
     <ProjectReference Include="..\ModelClasses\ModelClasses.csproj" />
   </ItemGroup>
 
